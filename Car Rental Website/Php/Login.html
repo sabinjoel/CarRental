@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../Css/Login.css">
+    <title>Car Rental</title>
+  </head>
+  <body>
+    <form method = 'POST' action = "./Login.php">
+    <div class="login-box">
+      <h1>Login</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input class = "email" type="email" name = "username" placeholder="Username" required>
+      </div>
+    
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input class = "pass" type="password" name = "password" placeholder="Password" id = "pass" required>
+      </div>
+      <p class = show>
+        <input type="checkbox" onclick="myFunction()">Show password
+      </p>
+        <input type="radio" id="User" name="type" value="User" required>
+        <label>User</label>
+        <input type="radio" id="Owner" name="type" value="Owner" required>
+        <label>Owner</label><br>
+    <div class = "Forgot">
+        <p>Don't have an account?</p>
+        <p>
+          Register here
+          <a href = "./OwnerRegistration.html" target="_blank " >Owner</a>
+          Or
+          <a href = "./UserRegistration.html" target="_blank">User</a>
+        </p>
+        
+    </div>
+    <!--<a href="./../Php/Login.php"><button class="btn">Sign in</button></a>-->
+    <button class="btn" name = "Signin">Sign in</button>
+    </div>
+  </form>
+    <!--for show password-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("pass");
+        if (x.type === "password"){
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Registration Form</title>
+
+</head>
+<body>
+    <link rel="stylesheet" href="./../Css/OwnerRegistration.css">
+    <div class="regform">
+    <h1>Owner Registration Form</h1>
+</div>
+<div class="main">
+        <form method="POST" id = "form"  action = './../Php/OwnerRegistration.php' target = "_blank">
+            <div id="name">
+                <h2 class="name"> Name <span style = "color: red;">&#42;</span></h2> 
+                <input class="firstname" type="text" name="first_name" placeholder = "Enter your First name" required><br>
+                <label class="firstlabel" >first name</label>
+                <input class="lastname" type="text" name="last_name" placeholder = "Enter your Last name" required><br>
+                <label class="lastlabel">last name </label>
+            </div>
+            <h2 class = "name" >Date Of Birth<span style = "color: red;">&#42;</span></h2>
+            <input class = "email" type = "date" name = "Dob">
+            <h2 class = "name">Age<span style = "color: red;">&#42;</span></h2>
+            <input class="email" type="text" name="age" placeholder="Enter your Age" name = "Age" required>
+            <h2 class="name"> Company Name<span style = "color: red;">&#42;</span></h2>
+            <input class="company" type="text" name="company" placeholder="Enter your  company name" required>
+            <h2 class="name">Email<span style = "color: red;">&#42;</span></h2>
+            <input class="email" type="email" name="email" placeholder="Enter your Email id" required>
+            <h2 class="name">Password<span style = "color: red;">&#42;</span></h2>
+            <!-- here we have to change id for (email) -->
+            <input class="email" type="password" name="Password" placeholder="Enter your Password" required>
+            
+            <h2 class="name">Phone Number<span style = "color: red;">&#42;</span></h2>
+            <input class="email" type="text" name="Phone" placeholder="Enter your Phone number" required>
+            <!-- <input class="email" type="text" name="email" placeholder="Enter your Email id"> -->
+            <br>
+            <h2 class="name">Insurance Number<span style = "color: red;">&#42;</span></h2>
+            <input class="email" type="text" name="Insurance" placeholder="Enter your Car Insurance Number " required>
+            <h2 class="name">Address<span style = "color: red;">&#42;</span></h2>
+            <textarea id = "form" placeholder="Enter your Address" rows = "10" cols = "100" name = "Address" required> </textarea>
+            <!-- <input class="email" type="textarea" name="email" placeholder="Enter your Email id"> -->
+            <button type="submit" name = 'Submit'>Submit</button>
+        </form>
+</div>
+</body>
+</html>
